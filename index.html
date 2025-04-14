@@ -17,11 +17,11 @@
       </header>
       <main>
          <section id="introduction">
-            <span>
+            <div>
                <h1><strong>Pomodoro Timer First Brainstorm</strong></h1>
                <h3>Brainstorming/planning</h3>
                <h4><i>4/10/24</i></h4>
-            </span>
+            </div>
 
             <div>
                <h3><b>Attendance</b></h3>
@@ -40,7 +40,7 @@
             <h3>Agenda</h3>
             <ol>
                <li>
-                  <p>Go over unfinished buisness</p>
+                  <p>Go over <span> unfinished </span>buisness</p>
                </li>
                <li>
                   <p>Discuss core features for the app while keeping in mind budget and time constraints.</p>
@@ -78,17 +78,18 @@
                <li>Lebron thinks that its a good idea to get a project manager to oversee the construction of the application.</li>
                <li>One proposed path to monetization is the incorporation of ads and paid version of the app.</li>
                <li>Cheerios are a strong contender for our snack next team meeting</li>
-               <details>
-                  <summary>One Additional Note</summary>
-                  <p>One thing that was brought up in the meeting was how there are many competitiors in this type of app, since this app idea is not unique. Therefore, it is important to think of ways to distinguish the app from others. </p>
-               </details>
             </ul>
+            <details>
+               <summary>One Additional Note</summary>
+               <p>One thing that was brought up in the meeting was how there are many competitiors in this type of app, since this app idea is not unique. Therefore, it is important to think of ways to distinguish the app from others. </p>
+            </details>
 
             <p>The following is a proposed UI design:</p>
             <img 
                src="./media/78c17289433823.60207ac365802.jpg"
                width="300"
                height="150"
+               alt="Image cannot be displayed"
             />
             <div>
                <p>The following is potenital background music for the pomodoro</p>
@@ -111,42 +112,42 @@
 
                   <h4>Was this meeting fun?</h4>
                   <label>Yes</label>
-                  <input type="radio" name="meeting_fun" value="yes"/>
+                  <input type="radio" name="meeting_fun" value="yes">
                   <label>No</label>
-                  <input type="radio" name="meeting_fun" value="no"/>
+                  <input type="radio" name="meeting_fun" value="no">
 
                   <h4>Which of the following days are you available for the next meeting?</h4>
                      <div>
                         <label>Sunday</label>
-                        <input type="checkbox" name="days" value="sunday"/>
+                        <input type="checkbox" name="days" value="sunday">
                      </div>
 
                      <div>
                         <label>Monday</label>
-                        <input type="checkbox" name="days" value="monday"/>
+                        <input type="checkbox" name="days" value="monday">
                      </div>
 
                      <div>
                         <label>Tuesday</label>
-                        <input type="checkbox" name="days" value="tuesday"/>
+                        <input type="checkbox" name="days" value="tuesday">
                      </div>
 
                      <div>
                         <label>Wednesday</label>
-                        <input type="checkbox" name="days" value="wednesday"/>
+                        <input type="checkbox" name="days" value="wednesday">
                      </div>
 
                   <h4>Describe this meeting in one word:</h4>
-                  <input type="text"/>
+                  <input type="text">
 
                   <h4>When is your birthday?</h4>
-                  <input type="date"/>
+                  <input type="date">
 
                   <h4>What was your favorite thing about this meeting?</h4>
                   <textarea></textarea>
 
                   <h4>Do you have snack suggestions for the next meeting?</h4>
-                  <input type="text" id="snacks" list="snacks"/>
+                  <input type="text" list="snacks"/>
 
                   <datalist id="snacks">
                      <option value="apple">
