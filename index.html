@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="description" content="This is a site describing meeting minutes"/>
+      <title>Meeting Minutes</title>
+      <link rel="icon" href="./media/favicon-16x16.png"/>
+   </head>
+
+   <body>
+      <header>
+         <nav>
+            <a href="#introduction">Introduction</a>
+            <a href="#buisness">Buisness</a>
+            <a href="#notes">Notes</a>
+            <a href="#survey">Survey</a>
+         </nav>
+      </header>
+      <main>
+         <section id="introduction">
+            <span>
+               <h1><strong>Pomodoro Timer First Brainstorm</strong></h1>
+               <h3>Brainstorming/planning</h3>
+               <h4><i>4/10/24</i></h4>
+            </span>
+
+            <div>
+               <h3><b>Attendance</b></h3>
+               <ul>
+                  <li>Lebron</li>
+                  <li>Bob</li>
+                  <li>Tim</li>
+                  <li>Carl</li>
+                  <li>Smith</li>
+               </ul>
+            </div>
+         </section>
+         <br />
+         <section id="buisness">
+            <h2><b>Buisness</b></h2>
+            <h3>Agenda</h3>
+            <ol>
+               <li>
+                  <p>Go over unfinished buisness</p>
+               </li>
+               <li>
+                  <p>Discuss core features for the app while keeping in mind budget and time constraints.</p>
+               </li>
+               <li>
+                  <p>Develop the a rough sketch for the ui and general backend structure for the application.</p>
+               </li>
+            </ol>
+
+            <h3>Unfinished Buisness</h3>
+            <ol>
+               <li>
+                  <p>We must <em>finish</em> choosing a name for the app</p>
+               </li>
+               <li>
+                  <p>Create the workflow for the project as in what we will work on first, second, third, etc.</p>
+               </li>
+            </ol>
+
+            <h3>New Buisness</h3>
+            <ol>
+               <li>
+                  <p>Discuss potentially recruiting new members to the team, such as a designated ui/ux developer.</p>
+               </li>
+               <li>
+                  <p>Discuss potential paths to monetization and other streams of income to fund the project</p>
+               </li>
+            </ol>
+         </section>
+         <br />
+         <section id="notes">
+            <h2><b>Notes</b></h2>
+
+            <ul>
+               <li>Lebron thinks that its a good idea to get a project manager to oversee the construction of the application.</li>
+               <li>One proposed path to monetization is the incorporation of ads and paid version of the app.</li>
+               <li>Cheerios are a strong contender for our snack next team meeting</li>
+               <details>
+                  <summary>One Additional Note</summary>
+                  <p>One thing that was brought up in the meeting was how there are many competitiors in this type of app, since this app idea is not unique. Therefore, it is important to think of ways to distinguish the app from others. </p>
+               </details>
+            </ul>
+
+            <p>The following is a proposed UI design:</p>
+            <img 
+               src="./media/78c17289433823.60207ac365802.jpg"
+               width="300"
+               height="150"
+            />
+            <div>
+               <p>The following is potenital background music for the pomodoro</p>
+               <audio controls loop>
+                  <source src="./media/asphalt-sizzle-322468.mp3" type="audio/mp3">
+               </audio>
+            </div>
+            <div>
+               <p>The following is a potenital background theme for the pomodoro</p>
+               <video controls loop>
+                  <source src="./media/IMG_6617.mp4" type="video/mp4">
+               </video>
+            </div>
+         </section>
+         <br />
+         <section id="survey">
+            <form>
+               <fieldset>
+                  <h2><b>Survey</b></h2>
+
+                  <h4>Was this meeting fun?</h4>
+                  <label>Yes</label>
+                  <input type="radio" name="meeting_fun" value="yes"/>
+                  <label>No</label>
+                  <input type="radio" name="meeting_fun" value="no"/>
+
+                  <h4>Which of the following days are you available for the next meeting?</h4>
+                     <div>
+                        <label>Sunday</label>
+                        <input type="checkbox" name="days" value="sunday"/>
+                     </div>
+
+                     <div>
+                        <label>Monday</label>
+                        <input type="checkbox" name="days" value="monday"/>
+                     </div>
+
+                     <div>
+                        <label>Tuesday</label>
+                        <input type="checkbox" name="days" value="tuesday"/>
+                     </div>
+
+                     <div>
+                        <label>Wednesday</label>
+                        <input type="checkbox" name="days" value="wednesday"/>
+                     </div>
+
+                  <h4>Describe this meeting in one word:</h4>
+                  <input type="text"/>
+
+                  <h4>When is your birthday?</h4>
+                  <input type="date"/>
+
+                  <h4>What was your favorite thing about this meeting?</h4>
+                  <textarea></textarea>
+
+                  <h4>Do you have snack suggestions for the next meeting?</h4>
+                  <input type="text" id="snacks" list="snacks"/>
+
+                  <datalist id="snacks">
+                     <option value="apple">
+                     <option value="banana">
+                     <option value="nuts">
+                     <option value="chips">
+                     <option value="cheese">
+                  </datalist>
+
+                  <h4>Hows your day been?</h4>
+                  <select name="day_rating">
+                     <option>Good</option>
+                     <option>Great</option>
+                     <option>Meh</option>
+                  </select>
+                  <br/>
+                  <br />
+                  <button>Submit</button>
+               </fieldset>
+            </form>
+         </section>
+      </main>
+      <footer>
+
+      </footer>
+   </body>
+
+</html>
