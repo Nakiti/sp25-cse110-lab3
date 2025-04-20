@@ -7,7 +7,7 @@
 
 
 ## Standup Summary
-## 1. What did I work on yesterday?
+### 1. What did I work on yesterday?
 
 | **Team Member**  | **Tasks Completed**                                                        |
 |------------------|---------------------------------------------------------------------------|
@@ -16,7 +16,7 @@
 | [Team Member 3]  | [description of the tasks completed]  
 
 
-## 2. What am I working on today?
+### 2. What am I working on today?
 
 | **Team Member**  | **Tasks for Today**                                                        |
 |------------------|---------------------------------------------------------------------------|
@@ -25,7 +25,7 @@
 | [Team Member 3]  | [description of the tasks for the day] 
 
 
-## 3. Any blockers or challenges?
+### 3. Any blockers or challenges?
 
 | **Team Member**  | **Blockers/Challenges**                                                   |
 |------------------|---------------------------------------------------------------------------|
@@ -33,7 +33,7 @@
 | [Team Member 2]  | [description of any blockers or challenges faced]                   |
 | [Team Member 3]  | [description of any blockers or challenges faced]
 
-## 4. Miscellaneous/Announcements
+### 4. Miscellaneous/Announcements
 - Annoucement #1
 - Note #1
 
