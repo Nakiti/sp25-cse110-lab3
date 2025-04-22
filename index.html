@@ -4,26 +4,33 @@
       <meta name="description" content="This is a site describing meeting minutes"/>
       <title>Meeting Minutes</title>
       <link rel="icon" href="./media/favicon-16x16.png"/>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
    </head>
 
    <body>
       <header>
-         <nav>
-            <a href="#introduction">Introduction</a>
-            <a href="#buisness">Buisness</a>
-            <a href="#notes">Notes</a>
-            <a href="#survey">Survey</a>
+         <nav id="navbar">
+            <a href="#introduction" class="nav-link">Introduction</a>
+            <a href="#buisness" class="nav-link">Buisness</a>
+            <a href="#notes" class="nav-link">Notes</a>
+            <a href="#survey" class="nav-link">Survey</a>
          </nav>
       </header>
       <main>
          <section id="introduction">
-            <div>
-               <h1><strong>Pomodoro Timer First Brainstorm</strong></h1>
-               <h3>Brainstorming/planning</h3>
-               <h4><i>4/10/24</i></h4>
+            <div id="headers">
+               <h1 id="title"><strong>Pomodoro Timer First Brainstorm</strong></h1>
+               <h3 id="subtitle">Brainstorming/planning</h3>
+               <h4 id="date"><i>4/10/24</i></h4>
             </div>
 
-            <div>
+            <div class="attendance">
                <h3><b>Attendance</b></h3>
                <ul>
                   <li>Lebron</li>
@@ -39,7 +46,7 @@
          <section id="buisness">
             <h2><b>Buisness</b></h2>
             <h3>Agenda</h3>
-            <ol>
+            <ol >
                <li>
                   <p>Go over <span> unfinished </span>buisness</p>
                </li>
@@ -77,95 +84,118 @@
             <h2><b>Notes</b></h2>
 
             <ul>
-               <li>Lebron thinks that its a good idea to get a project manager to oversee the construction of the application.</li>
-               <li>One proposed path to monetization is the incorporation of ads and paid version of the app.</li>
-               <li>Cheerios are a strong contender for our snack next team meeting</li>
+               <li class="emphasize">Lebron thinks that its a good idea to get a project manager to oversee the construction of the application.</li>
+               <li class="emphasize">One proposed path to monetization is the incorporation of ads and paid version of the app.</li>
+               <li class="emphasize">Cheerios are a strong contender for our snack next team meeting</li>
             </ul>
             <details>
                <summary>One Additional Note</summary>
                <p>One thing that was brought up in the meeting was how there are many competitiors in this type of app, since this app idea is not unique. Therefore, it is important to think of ways to distinguish the app from others. </p>
             </details>
 
-            <p>The following is a proposed UI design:</p>
-            <img 
-               src="./media/78c17289433823.60207ac365802.jpg"
-               width="300"
-               height="150"
-               alt="Image cannot be displayed"
-            />
+            <span class="media">
+               <div class="media-item">
+                  <p class="media-description">The following is a proposed UI design:</p>
+                  <img 
+                     class="media-image"
+                     src="./media/78c17289433823.60207ac365802.jpg"
+                     width="300"
+                     height="150"
+                     alt="Image cannot be displayed"
+                  />
+               </div>
+               <div class="media-item">
+                  <p class="media-description">The following is a potential background theme for the pomodoro:</p>
+                  <video class="media-video" controls loop>
+                     <source src="./media/IMG_6617.mp4" type="video/mp4">
+                  </video>
+               </div>
+            </span>
             <div>
                <p>The following is potenital background music for the pomodoro</p>
                <audio controls loop>
                   <source src="./media/asphalt-sizzle-322468.mp3" type="audio/mp3">
                </audio>
             </div>
-            <div>
-               <p>The following is a potenital background theme for the pomodoro</p>
-               <video controls loop>
-                  <source src="./media/IMG_6617.mp4" type="video/mp4">
-               </video>
-            </div>
          </section>
          <hr>
          <br />
          <section id="survey">
             <form>
-               <fieldset>
-                  <h2><b>Survey</b></h2>
+               <fieldset class="form-container">
+                  <h2 id="form-header"><b>Survey</b></h2>
 
-                  <h4>Was this meeting fun?</h4>
-                  <label>Yes</label>
-                  <input type="radio" name="meeting_fun" value="yes">
-                  <label>No</label>
-                  <input type="radio" name="meeting_fun" value="no">
+                  <div>
+                     <h4>Was this meeting fun?</h4>
+                     <span>
+                        <label>Yes</label>
+                        <input type="radio" name="meeting_fun" value="yes">
+                     </span>
+                     <span>
+                        <label>No</label>
+                        <input type="radio" name="meeting_fun" value="no">
+                     </span>
+                  </div>
 
-                  <h4>Which of the following days are you available for the next meeting?</h4>
-                     <div>
+                  <div>
+                     <h4>Which of the following days are you available for the next meeting?</h4>
+                     <span>
                         <label>Sunday</label>
                         <input type="checkbox" name="days" value="sunday">
-                     </div>
+                     </span>
 
-                     <div>
+                     <span>
                         <label>Monday</label>
                         <input type="checkbox" name="days" value="monday">
-                     </div>
+                     </span>
 
-                     <div>
+                     <span>
                         <label>Tuesday</label>
                         <input type="checkbox" name="days" value="tuesday">
-                     </div>
+                     </span>
 
-                     <div>
+                     <span>
                         <label>Wednesday</label>
                         <input type="checkbox" name="days" value="wednesday">
-                     </div>
+                     </span>
+                  </div>
 
-                  <h4>Describe this meeting in one word:</h4>
-                  <input type="text">
+                  <div>
+                     <h4>Describe this meeting in one word:</h4>
+                     <input type="text">
+                  </div>
 
-                  <h4>When is your birthday?</h4>
-                  <input type="date">
+                  <div>
+                     <h4>When is your birthday?</h4>
+                     <input type="date">
+                  </div>
 
-                  <h4>What was your favorite thing about this meeting?</h4>
-                  <textarea></textarea>
+                  <div>
+                     <h4>What was your favorite thing about this meeting?</h4>
+                     <textarea></textarea>
+                  </div>
+                  
+                  <div>
+                     <h4>Do you have snack suggestions for the next meeting?</h4>
+                     <input type="text" list="snacks"/>
 
-                  <h4>Do you have snack suggestions for the next meeting?</h4>
-                  <input type="text" list="snacks"/>
-
-                  <datalist id="snacks">
-                     <option value="apple">
-                     <option value="banana">
-                     <option value="nuts">
-                     <option value="chips">
-                     <option value="cheese">
-                  </datalist>
-
-                  <h4>Hows your day been?</h4>
-                  <select name="day_rating">
-                     <option>Good</option>
-                     <option>Great</option>
-                     <option>Meh</option>
-                  </select>
+                     <datalist id="snacks">
+                        <option value="apple">
+                        <option value="banana">
+                        <option value="nuts">
+                        <option value="chips">
+                        <option value="cheese">
+                     </datalist>
+                  </div>
+                  
+                  <div>
+                     <h4>Hows your day been?</h4>
+                     <select name="day_rating">
+                        <option>Good</option>
+                        <option>Great</option>
+                        <option>Meh</option>
+                     </select>
+                  </div>
                   <br/>
                   <br />
                   <button>Submit</button>
@@ -173,7 +203,7 @@
             </form>
          </section>
       </main>
-      <footer>
+      <footer class="footer">
          <p>Created for the Purpose of Maintaining Meeting Notes - 2025</p>
          <p>Thanks for visiting</p>
       </footer>

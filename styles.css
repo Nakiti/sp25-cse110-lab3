@@ -1,0 +1,364 @@
+:root {
+   --main-header-color: cornflowerBlue;
+}
+
+body {
+   font-family: Arial, sans-serif;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+h1, h2 {
+   font-family: "Winky Rough", sans-serif;
+}
+
+h2 {
+   margin-bottom: 20px
+}
+
+@media (color-gamut: srgb) {
+   body {
+     background: color-mix(in hsl, lightBlue, green 10%);
+   }
+}
+
+header {
+   background-color: var(--main-header-color);
+   padding: 1pc 1pc 1pc 1pc;
+   border-width: 2pt;
+   border-color: white;
+   border-style: dashed;
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
+   position: fixed;
+   width: 100vw
+}
+
+#navbar {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.nav-link {
+   color: rgba(255, 255, 255, 0.5);
+   color: color(from white srgb r g b / 0.5);
+   text-decoration: none;
+   text-align: center;
+}
+
+.nav-link:hover {
+   text-decoration: underline
+}
+
+main {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+#title {
+   margin: auto;
+   font-size: 2.5em;
+   font-weight: bold;
+   color: #2c3e50; 
+   text-align: center; 
+   letter-spacing: 1px;  
+   position: static
+}
+
+/* Header Section Styling */
+#headers {
+   display: grid;
+   grid-template-rows: auto auto 1fr; 
+   gap: 15px;
+   justify-content: center;  
+   align-items: center;
+   margin-top: 40px;
+   max-height: 100vh;
+   padding: 20px;
+}
+
+/* Subtitle Styling */
+#subtitle {
+   margin: 0;
+   font-size: 1.5em;  
+   font-weight: 600;  
+   color: rgb(52, 73, 94);  
+   text-align: center;  
+   letter-spacing: 0.5px;
+}
+
+/* Date Styling */
+#date {
+   margin: 0;
+   font-size: 1.1em;  
+   color: #7f8c8d;  
+   text-align: center;
+   font-style: italic; 
+   letter-spacing: 0.5px;
+}
+
+.attendance {
+   max-width: 300px;
+   margin-top: 20px;
+   margin: auto
+}
+
+.attendance h3 {
+   font-size: 1.2rem;
+   margin-bottom: 10px;
+   color: #333;
+   text-align: center;
+}
+
+.attendance ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   gap: 10px
+}
+
+.attendance li {
+   padding: 6px 12px;
+   margin-bottom: 6px;
+   background-color: #e7f0fd;
+   border-radius: 5px;
+   border-width: 2px;
+   color: hsl(235, 66%, 30%);
+   font-weight: 500;
+   transition: background-color 0.2s ease;
+}
+
+.attendance li:hover {
+   background-color: #d0e2fc;
+}
+
+.attendance li:active {
+   display: none
+}
+
+
+section ol {
+   padding: 0px 10px 0px 10px
+}
+
+ol > li {
+   margin: 10px 0px 10px 0px;
+   list-style: none
+}
+
+h3 + ol, h2 + ul {
+   border: solid #ddd 2px;        
+   border-radius: 12px;           
+   margin-top: 5px;               
+   margin-bottom: 20px;          
+   font-size: 16px;               
+   padding: 15px;                  
+   background-color: #f9f9f9;      
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+
+h4 ~ input {
+   border: solid black 1px;
+   border-radius: 5px;
+   padding: 5px;
+   margin: 5px
+}
+
+li[class] {
+   list-style: none;
+   margin-top: 5px;
+   font-size: 16px
+}
+
+img {
+   height: 200px;
+   width: 400px
+}
+
+/* General Styles for the Media Section */
+.media {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 20px;
+   padding: 20px;
+   margin: 20px 0;
+}
+
+
+.media-description {
+   font-size: 1em;
+   color: #333;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+/* Image Styling */
+.media-image {
+   min-width: 400px;
+   width: 100%;
+   height: 200px;
+}
+
+/* Video Styling */
+.media-video {
+   width: 400px;
+   height: 200px;
+}
+
+fieldset:has(h2) {
+   padding: 20px
+}
+
+.footer {
+   display: flex;
+   justify-content: space-around;
+   padding: 10px;
+   background-color: var(--main-header-color);
+   font-size: 12px;
+   position: sticky;
+   width: 100%;
+   
+}
+
+/* Form Container */
+.form-container {
+   background: #f9fafb;
+   padding: 30px;
+   border-radius: 8px;
+   border: 1px solid #e3e4e8;
+   max-width: 600px;
+   margin: auto;
+   font-family: 'Arial', sans-serif;
+}
+ 
+ /* Header */
+#form-header {
+   text-align: center;
+   font-size: 2em;
+   margin-bottom: 20px;
+}
+ 
+fieldset {
+   border: none;
+}
+ 
+h4 {
+   font-size: 1.1em;
+   color: #333;
+   /* margin-bottom: 10px; */
+}
+ 
+fieldset div {
+   margin-bottom: 20px;
+   display: grid;
+   gap: 10px;
+}
+ 
+input[type="radio"] {
+   margin-left: 10px;
+}
+ 
+input[type="checkbox"] {
+   margin-left: 10px;
+}
+ 
+ /* Textarea */
+textarea {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   background-color: #f7f7f7;
+   height: 120px;
+}
+
+ /* Select Dropdown */
+select {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   background-color: #f7f7f7;
+}
+ 
+ /* Button Styling */
+button {
+   background-color: #4b6b9f;
+   color: white;
+   border: none;
+   padding: 12px 25px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1.1em;
+   width: 100%;
+   transition: background-color 0.3s;
+}
+ 
+button:hover {
+   background-color: #3a5489;
+}
+ 
+ 
+label {
+   font-size: 1em;
+   color: #333;
+   display: inline-block;
+   margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+   .form-container {
+      background: #f9fafb;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #e3e4e8;
+      font-family: 'Arial', sans-serif;
+   }
+   h4 {
+      font-size: .9em;
+      color: #333;
+      /* margin-bottom: 10px; */
+   }
+   label {
+      font-size: .8em;
+      color: #333;
+      display: inline-block;
+      margin-bottom: 5px;
+   }
+   fieldset div {
+      margin-bottom: 10px;
+      display: grid;
+      gap: 5px;
+   }
+   textarea {
+      width: 90%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f7f7f7;
+      height: 120px;
+   }
+   .media-image {
+      min-width: 300px;
+      width: 100%;
+      height: 150px;
+   }
+   
+   /* Video Styling */
+   .media-video {
+      width: 300px;
+      height: 150px;
+   }
+}
